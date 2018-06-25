@@ -67,7 +67,7 @@
               <name>kurtis/${project.artifactId}</name>
               <build>
                 <from>openjdk:8-jre-alpine3.7</from>
-                <entryPoint>java-jar/app/${project.build.finalName}.jar</entryPoint>
+                <entryPoint>java -jar /app/${project.build.finalName}.jar</entryPoint>
                 <assembly>
                   <basedir>/app</basedir>
                   <descriptorRef>artifact</descriptorRef>
